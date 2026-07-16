@@ -1,0 +1,16 @@
+# robots.txt — Kasab Law
+# https://kasablaw.com
+
+User-agent: *
+Allow: /
+
+# Block nothing sensitive on a public brochure site.
+# If you later add admin or staging paths, disallow them here, e.g.:
+# Disallow: /admin/
+# Disallow: /staging/
+
+# Well-behaved crawl pacing (ignored by Google, honoured by some bots)
+Crawl-delay: 5
+
+# Sitemap location
+Sitemap: https://kasablaw.com/sitemap.xml
