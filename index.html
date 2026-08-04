@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Kasab Law — Advocates | Nazareth · Jerusalem · Haifa</title>
-<meta name="description" content="Kasab Law — a second-generation law firm founded by the late Adv. Khaled Kasab. Construction, corporate, organisational, immigration and intellectual property law. Nazareth · Jerusalem · Haifa.">
+<title>Kasab Law — Advocates | Haifa · Jericho</title>
+<meta name="description" content="Kasab Law — a second-generation law firm founded in Nazareth by the late Adv. Khaled Kasab, based today in Haifa (Nesher) and Jericho. Construction, corporate, organisational, immigration and intellectual property law.">
 <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
 <meta name="keywords" content="Kasab Law, law firm, advocates, Nazareth, Jerusalem, Haifa, Israel, construction law, corporate law, immigration, work permits, intellectual property">
 <meta name="author" content="Kasab Law — Advocates">
@@ -17,8 +17,8 @@
 <!-- Open Graph -->
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Kasab Law">
-<meta property="og:title" content="Kasab Law — Advocates | Nazareth · Jerusalem · Haifa">
-<meta property="og:description" content="Intelligent, modern legal solutions and advice — construction, corporate, immigration and intellectual property. Nazareth · Jerusalem · Haifa.">
+<meta property="og:title" content="Kasab Law — Advocates | Haifa · Jericho">
+<meta property="og:description" content="Intelligent, modern legal solutions and advice — construction, corporate, immigration and intellectual property. Offices in Haifa (Nesher) and Jericho.">
 <meta property="og:url" content="https://kasablaw.com/">
 <meta property="og:locale" content="en">
 <meta property="og:locale:alternate" content="he">
@@ -37,12 +37,12 @@
   "email": "Advkhhm@gmail.com",
   "telephone": "+972-52-3223876",
   "foundingLocation": "Nazareth, Israel",
-  "areaServed": ["Nazareth", "Jerusalem", "Haifa", "Israel"],
+  "areaServed": ["Haifa", "Jericho", "Israel"],
   "knowsLanguage": ["en", "he", "ar"],
+  "openingHours": "Su,Mo,Tu,We,Th 09:00-17:00",
   "location": [
-    { "@type": "Place", "name": "Kasab Law — Nazareth", "address": { "@type": "PostalAddress", "addressLocality": "Nazareth", "addressCountry": "IL" } },
-    { "@type": "Place", "name": "Kasab Law — Jerusalem", "address": { "@type": "PostalAddress", "addressLocality": "Jerusalem", "addressCountry": "IL" } },
-    { "@type": "Place", "name": "Kasab Law — Haifa", "address": { "@type": "PostalAddress", "addressLocality": "Haifa", "addressCountry": "IL" } }
+    { "@type": "Place", "name": "Kasab Law — Haifa (Nesher)", "address": { "@type": "PostalAddress", "streetAddress": "Derech Bar Yehuda 53", "addressLocality": "Nesher", "addressRegion": "Haifa District", "addressCountry": "IL" } },
+    { "@type": "Place", "name": "Kasab Law — Jericho", "address": { "@type": "PostalAddress", "streetAddress": "Al Dyuk, Ein al-Sultan", "addressLocality": "Jericho" } }
   ],
   "serviceType": ["Construction Law", "Business & Corporate Law", "Organisational Law", "Immigration & Work Permits", "Intellectual Property"],
   "employee": [
@@ -180,6 +180,29 @@ body.menu-open .menu{ visibility:visible; opacity:1; transition:opacity .5s var(
 .ml small{ font-family:var(--sans); font-size:12px; color:var(--gold); letter-spacing:.2em; }
 .menu-foot{ margin-top:40px; display:flex; flex-wrap:wrap; gap:18px 34px; color:var(--muted); font-size:13px; }
 .menu-foot a{ color:var(--gold); }
+.ml-sub{ display:flex; flex-wrap:wrap; gap:6px 20px; padding:4px 0 12px; }
+.ml-sub a{ font-size:14px; color:var(--muted); transition:color .3s; }
+.ml-sub a:hover{ color:var(--gold); }
+
+/* ---------- practice dropdown ---------- */
+.nl-drop{ position:relative; }
+.nl-drop > .nl .dd-car{ display:inline-block; font-size:9px; margin-inline-start:7px; transition:transform .35s var(--ease); }
+.nl-drop:hover > .nl .dd-car, .nl-drop:focus-within > .nl .dd-car{ transform:rotate(180deg); }
+.drop{ position:absolute; top:100%; inset-inline-start:-18px; min-width:310px; padding-top:16px; opacity:0; visibility:hidden; transform:translateY(12px); transition:opacity .35s var(--ease), transform .35s var(--ease), visibility 0s .35s; z-index:1001; }
+.nl-drop:hover .drop, .nl-drop:focus-within .drop{ opacity:1; visibility:visible; transform:translateY(0); transition:opacity .35s var(--ease), transform .35s var(--ease); }
+.drop-in{ background:rgba(255,255,255,.94); backdrop-filter:blur(18px); -webkit-backdrop-filter:blur(18px); border:1px solid var(--line); border-radius:16px; box-shadow:0 30px 70px rgba(16,31,54,.18); padding:10px; }
+.drop-in a{ display:flex; align-items:center; gap:12px; padding:11px 14px; border-radius:10px; font-size:13.5px; font-weight:500; color:var(--white); transition:background .3s; }
+.drop-in a:hover{ background:var(--bg2); }
+.drop-in .d-n{ font-family:var(--serif); font-style:italic; font-size:12px; color:var(--gold); width:1.7em; flex:none; }
+.drop-in .d-ar{ margin-inline-start:auto; opacity:0; transform:translateX(-6px); transition:all .3s var(--ease); color:var(--gold); }
+[dir="rtl"] .drop-in .d-ar{ transform:translateX(6px) scaleX(-1); }
+.drop-in a:hover .d-ar{ opacity:1; transform:translateX(0); }
+[dir="rtl"] .drop-in a:hover .d-ar{ transform:translateX(0) scaleX(-1); }
+.drop-in .d-all{ border-top:1px solid var(--line); margin-top:6px; font-size:10.5px; font-weight:700; letter-spacing:.18em; text-transform:uppercase; color:var(--muted); }
+.drop-in .d-all:hover{ color:var(--gold); background:none; }
+
+/* practice row link pair */
+.pr-links{ display:flex; flex-wrap:wrap; gap:14px 30px; align-items:center; }
 
 /* ---------- buttons ---------- */
 .btn{ position:relative; display:inline-flex; align-items:center; gap:10px; padding:16px 32px; border-radius:99px; font-size:12.5px; font-weight:700; letter-spacing:var(--track); text-transform:uppercase; overflow:hidden; isolation:isolate; transition:color .45s var(--ease), border-color .45s; white-space:nowrap; }
@@ -389,7 +412,7 @@ html.js .f-giant span{ transform:translateY(55%); opacity:0; }
 .totop:hover .tt-c{ background:var(--gold); color:var(--navy-ink); transform:translateY(-4px); }
 
 /* ---------- responsive ---------- */
-@media (max-width:1100px){
+@media (max-width:1240px){
   .nav-links, .nav .nav-cta{ display:none; }
   .burger{ display:block; }
 }
@@ -469,10 +492,21 @@ html.js .f-giant span{ transform:translateY(55%); opacity:0; }
     </a>
     <nav class="nav-links" aria-label="Primary">
       <a class="nl" href="#home" data-i="nav_home" data-cur>Home</a>
-      <a class="nl" href="#practice" data-i="nav_pr" data-cur>Practice</a>
+      <div class="nl-drop">
+        <a class="nl" href="#practice" data-cur aria-haspopup="true"><span data-i="nav_pr">Practice</span><span class="dd-car" aria-hidden="true">▾</span></a>
+        <div class="drop"><div class="drop-in">
+          <a href="service-construction.html" data-cur><span class="d-n num">01</span><span data-i="svc1">Construction</span><span class="d-ar" aria-hidden="true">→</span></a>
+          <a href="service-corporate.html" data-cur><span class="d-n num">02</span><span data-i="svc2">Business &amp; Corporate</span><span class="d-ar" aria-hidden="true">→</span></a>
+          <a href="service-organisational.html" data-cur><span class="d-n num">03</span><span data-i="svc3">Organisational</span><span class="d-ar" aria-hidden="true">→</span></a>
+          <a href="service-immigration.html" data-cur><span class="d-n num">04</span><span data-i="svc4">Immigration &amp; Work Permits</span><span class="d-ar" aria-hidden="true">→</span></a>
+          <a href="service-ip.html" data-cur><span class="d-n num">05</span><span data-i="svc5">Intellectual Property</span><span class="d-ar" aria-hidden="true">→</span></a>
+          <a class="d-all" href="#practice" data-cur><span data-i="svc_all">All practice areas</span></a>
+        </div></div>
+      </div>
       <a class="nl" href="#team" data-i="nav_team" data-cur>Team</a>
       <a class="nl" href="#legacy" data-i="nav_leg" data-cur>About</a>
       <a class="nl" href="workplace-policy.html" data-i="nav_policy" data-cur>Workplace Policy</a>
+      <a class="nl" href="locations.html" data-i="nav_loc" data-cur>Locations</a>
       <a class="nl" href="#contact" data-i="nav_con" data-cur>Contact</a>
     </nav>
     <div class="lang" role="group" aria-label="Language">
@@ -490,13 +524,21 @@ html.js .f-giant span{ transform:translateY(55%); opacity:0; }
   <nav class="menu-links" aria-label="Mobile">
     <a class="ml" href="#home"><small class="num">01</small><span data-i="nav_home">Home</span></a>
     <a class="ml" href="#practice"><small class="num">02</small><span data-i="nav_pr">Practice</span></a>
+    <div class="ml-sub">
+      <a href="service-construction.html" data-i="svc1">Construction</a>
+      <a href="service-corporate.html" data-i="svc2">Business &amp; Corporate</a>
+      <a href="service-organisational.html" data-i="svc3">Organisational</a>
+      <a href="service-immigration.html" data-i="svc4">Immigration &amp; Work Permits</a>
+      <a href="service-ip.html" data-i="svc5">Intellectual Property</a>
+    </div>
     <a class="ml" href="#team"><small class="num">03</small><span data-i="nav_team">Team</span></a>
     <a class="ml" href="#legacy"><small class="num">04</small><span data-i="nav_leg">About</span></a>
     <a class="ml" href="workplace-policy.html"><small class="num">05</small><span data-i="nav_policy">Workplace Policy</span></a>
-    <a class="ml" href="#contact"><small class="num">06</small><span data-i="nav_con">Contact</span></a>
+    <a class="ml" href="locations.html"><small class="num">06</small><span data-i="nav_loc">Locations</span></a>
+    <a class="ml" href="#contact"><small class="num">07</small><span data-i="nav_con">Contact</span></a>
   </nav>
   <div class="menu-foot">
-    <span><span data-i="off_naz">Nazareth</span> · <span data-i="off_jer">Jerusalem</span> · <span data-i="off_hai">Haifa</span></span>
+    <span><span data-i="off_hai">Haifa</span> · <span data-i="off_jrc">Jericho</span></span>
     <a href="mailto:Advkhhm@gmail.com" class="num">Advkhhm@gmail.com</a>
     <a href="tel:+972523223876" class="num" dir="ltr">052-3223876</a>
   </div>
@@ -510,7 +552,7 @@ html.js .f-giant span{ transform:translateY(55%); opacity:0; }
   <div class="hero-veil" aria-hidden="true"></div>
   <div class="hero-wm" aria-hidden="true">KASAB</div>
   <div class="wrap hero-in">
-    <p class="eyebrow hero-fade" data-i="hero_eyebrow">Advocates — Nazareth · Jerusalem · Haifa</p>
+    <p class="eyebrow hero-fade" data-i="hero_eyebrow">Advocates — Haifa · Jericho</p>
     <h1 class="hero-t">
       <span class="hl"><span class="hli" data-i="h1a">Intelligent, <em>modern</em> solutions</span></span>
       <span class="hl"><span class="hli" data-i="h1b">and legal advice.</span></span>
@@ -563,7 +605,7 @@ html.js .f-giant span{ transform:translateY(55%); opacity:0; }
         </button>
         <div class="pr-body"><div class="pr-bin"><div class="pr-bin2">
           <p class="pr-desc" data-i="pr1d">Contracts, tenders, planning and zoning, defects and liens — representing developers, contractors and property owners from groundbreaking to handover.</p>
-          <a class="pr-link" href="#contact" data-cur><span data-i="pr_link">Discuss your case</span><span class="b-ar">→</span></a>
+          <span class="pr-links"><a class="pr-link" href="service-construction.html" data-cur><span data-i="svc_more">Learn more</span><span class="b-ar">→</span></a><a class="pr-link" href="#contact" data-cur><span data-i="pr_link">Discuss your case</span></a></span>
         </div></div></div>
       </div>
       <div class="pr-row rev">
@@ -574,7 +616,7 @@ html.js .f-giant span{ transform:translateY(55%); opacity:0; }
         </button>
         <div class="pr-body"><div class="pr-bin"><div class="pr-bin2">
           <p class="pr-desc" data-i="pr2d">Company formation, shareholder and commercial agreements, transactions and ongoing counsel — for companies at every stage of their growth.</p>
-          <a class="pr-link" href="#contact" data-cur><span data-i="pr_link">Discuss your case</span><span class="b-ar">→</span></a>
+          <span class="pr-links"><a class="pr-link" href="service-corporate.html" data-cur><span data-i="svc_more">Learn more</span><span class="b-ar">→</span></a><a class="pr-link" href="#contact" data-cur><span data-i="pr_link">Discuss your case</span></a></span>
         </div></div></div>
       </div>
       <div class="pr-row rev">
@@ -585,7 +627,7 @@ html.js .f-giant span{ transform:translateY(55%); opacity:0; }
         </button>
         <div class="pr-body"><div class="pr-bin"><div class="pr-bin2">
           <p class="pr-desc" data-i="pr3d">Governance, internal policies, regulatory compliance and workforce structures — for companies, cooperatives and non-profits.</p>
-          <a class="pr-link" href="#contact" data-cur><span data-i="pr_link">Discuss your case</span><span class="b-ar">→</span></a>
+          <span class="pr-links"><a class="pr-link" href="service-organisational.html" data-cur><span data-i="svc_more">Learn more</span><span class="b-ar">→</span></a><a class="pr-link" href="#contact" data-cur><span data-i="pr_link">Discuss your case</span></a></span>
         </div></div></div>
       </div>
       <div class="pr-row rev">
@@ -596,7 +638,7 @@ html.js .f-giant span{ transform:translateY(55%); opacity:0; }
         </button>
         <div class="pr-body"><div class="pr-bin"><div class="pr-bin2">
           <p class="pr-desc" data-i="pr4d">Visas, status arrangements and work permits — guiding employers and individuals through every stage of the process.</p>
-          <a class="pr-link" href="#contact" data-cur><span data-i="pr_link">Discuss your case</span><span class="b-ar">→</span></a>
+          <span class="pr-links"><a class="pr-link" href="service-immigration.html" data-cur><span data-i="svc_more">Learn more</span><span class="b-ar">→</span></a><a class="pr-link" href="#contact" data-cur><span data-i="pr_link">Discuss your case</span></a></span>
         </div></div></div>
       </div>
       <div class="pr-row rev">
@@ -607,7 +649,7 @@ html.js .f-giant span{ transform:translateY(55%); opacity:0; }
         </button>
         <div class="pr-body"><div class="pr-bin"><div class="pr-bin2">
           <p class="pr-desc" data-i="pr5d">Trademarks, copyright, licensing and enforcement — protecting the ideas and identity behind your work.</p>
-          <a class="pr-link" href="#contact" data-cur><span data-i="pr_link">Discuss your case</span><span class="b-ar">→</span></a>
+          <span class="pr-links"><a class="pr-link" href="service-ip.html" data-cur><span data-i="svc_more">Learn more</span><span class="b-ar">→</span></a><a class="pr-link" href="#contact" data-cur><span data-i="pr_link">Discuss your case</span></a></span>
         </div></div></div>
       </div>
     </div>
@@ -727,10 +769,15 @@ html.js .f-giant span{ transform:translateY(55%); opacity:0; }
             <h3 class="tl-city"><span data-i="off_hai">Haifa</span><small data-i="tl3t">Growth</small></h3>
             <p class="tl-tx" data-i="tl3x">Reaching north — closer to the industry, ports and people of the bay.</p>
           </div>
+          <div class="tl-item rev">
+            <span class="tl-dot"></span>
+            <h3 class="tl-city"><span data-i="tl4c">Haifa &amp; Jericho</span><small data-i="tl4t">Today</small></h3>
+            <p class="tl-tx" data-i="tl4x">Our bases today — Derech Bar Yehuda 53 in Nesher (Haifa), and our office in Al Dyuk, Ein al-Sultan, Jericho.</p>
+          </div>
         </div>
 
         <div class="stats">
-          <div class="stat rev"><div class="st-n num"><span data-count="3">0</span></div><div class="st-l" data-i="st1l">Offices across Israel</div></div>
+          <div class="stat rev"><div class="st-n num"><span data-count="2">0</span></div><div class="st-l" data-i="st1l">Offices — Haifa &amp; Jericho</div></div>
           <div class="stat rev"><div class="st-n num"><span data-count="5">0</span></div><div class="st-l" data-i="st2l">Practice areas</div></div>
           <div class="stat rev"><div class="st-n num"><span data-count="2">0</span></div><div class="st-l" data-i="st3l">Generations of counsel</div></div>
         </div>
@@ -756,10 +803,10 @@ html.js .f-giant span{ transform:translateY(55%); opacity:0; }
           <a class="c-tel" href="tel:+972523223876" data-cur><span aria-hidden="true" style="color:var(--gold)">✆</span><span class="num" dir="ltr">052-3223876</span></a>
         </div>
         <div class="c-off rev">
-          <span><i></i><span data-i="off_naz">Nazareth</span></span>
-          <span><i></i><span data-i="off_jer">Jerusalem</span></span>
-          <span><i></i><span data-i="off_hai">Haifa</span></span>
+          <span><i></i><span data-i="loc_hai_line">Haifa — Derech Bar Yehuda 53, Nesher</span></span>
+          <span><i></i><span data-i="loc_jrc_line">Jericho — Al Dyuk, Ein al-Sultan</span></span>
         </div>
+        <p class="rev" style="margin-top:22px"><a class="pr-link" href="locations.html" data-cur><span data-i="loc_link">Offices, hours &amp; maps</span><span class="b-ar">→</span></a></p>
       </div>
       <form class="form rev" id="cform" novalidate>
         <div class="f-g">
@@ -797,7 +844,7 @@ html.js .f-giant span{ transform:translateY(55%); opacity:0; }
   <div class="wrap">
     <div class="f-cols">
       <div>
-        <p class="f-tag" data-i="f_tag">A second-generation law firm — from Nazareth to Jerusalem and Haifa.</p>
+        <p class="f-tag" data-i="f_tag">A second-generation law firm — born in Nazareth, based today in Haifa and Jericho.</p>
         <p class="f-trib" data-i="f_trib">Founded in Nazareth by the late Adv. Khaled Kasab.</p>
       </div>
       <div>
@@ -807,6 +854,7 @@ html.js .f-giant span{ transform:translateY(55%); opacity:0; }
           <li><a href="#team" data-i="nav_team" data-cur>Team</a></li>
           <li><a href="#legacy" data-i="nav_leg" data-cur>About</a></li>
           <li><a href="workplace-policy.html" data-i="nav_policy" data-cur>Workplace Policy</a></li>
+          <li><a href="locations.html" data-i="nav_loc" data-cur>Locations</a></li>
           <li><a href="#contact" data-i="nav_con" data-cur>Contact</a></li>
         </ul>
       </div>
@@ -815,7 +863,8 @@ html.js .f-giant span{ transform:translateY(55%); opacity:0; }
         <ul class="f-list">
           <li><a href="mailto:Advkhhm@gmail.com" class="num" data-cur>Advkhhm@gmail.com</a></li>
           <li><a href="tel:+972523223876" class="num" dir="ltr" data-cur>052-3223876</a></li>
-          <li><span style="color:var(--muted);font-size:14px"><span data-i="off_naz">Nazareth</span> · <span data-i="off_jer">Jerusalem</span> · <span data-i="off_hai">Haifa</span></span></li>
+          <li><span style="color:var(--muted);font-size:14px"><span data-i="loc_hai_line">Haifa — Derech Bar Yehuda 53, Nesher</span></span></li>
+          <li><span style="color:var(--muted);font-size:14px"><span data-i="loc_jrc_line">Jericho — Al Dyuk, Ein al-Sultan</span></span></li>
         </ul>
       </div>
     </div>
@@ -860,11 +909,13 @@ if (!hasGsap || reduced) showEverything();
    I18N — English / Hebrew / Arabic
 ============================================================ */
 const I18N = {
-en:{ _title:"Kasab Law — Advocates | Nazareth · Jerusalem · Haifa",
+en:{ _title:"Kasab Law — Advocates | Haifa · Jericho",
   brand_sub:"Advocates & Legal Counsel",
-  nav_home:"Home", nav_leg:"About", nav_pr:"Practice", nav_team:"Team", nav_con:"Contact", nav_policy:"Workplace Policy", nav_cta:"Let’s talk",
-  off_naz:"Nazareth", off_jer:"Jerusalem", off_hai:"Haifa",
-  hero_eyebrow:"Advocates — Nazareth · Jerusalem · Haifa",
+  nav_home:"Home", nav_leg:"About", nav_pr:"Practice", nav_team:"Team", nav_con:"Contact", nav_policy:"Workplace Policy", nav_loc:"Locations", nav_cta:"Let’s talk",
+  off_naz:"Nazareth", off_jer:"Jerusalem", off_hai:"Haifa", off_jrc:"Jericho",
+  loc_hai_line:"Haifa — Derech Bar Yehuda 53, Nesher", loc_jrc_line:"Jericho — Al Dyuk, Ein al-Sultan", loc_link:"Offices, hours & maps",
+  svc1:"Construction", svc2:"Business & Corporate", svc3:"Organisational", svc4:"Immigration & Work Permits", svc5:"Intellectual Property", svc_all:"All practice areas", svc_more:"Learn more",
+  hero_eyebrow:"Advocates — Haifa · Jericho",
   h1a:"Intelligent, <em>modern</em> solutions", h1b:"and legal advice.",
   hero_sub:"Kasab Law pairs sharp, contemporary legal thinking with hands-on advice — for businesses and individuals across construction, corporate, immigration and intellectual property.",
   cta1:"Start a conversation", cta2:"Explore our practice", scroll:"Scroll",
@@ -876,7 +927,8 @@ en:{ _title:"Kasab Law — Advocates | Nazareth · Jerusalem · Haifa",
   tl1t:"The beginning", tl1x:"The first office — where Adv. Khaled Kasab began his practice, and where the firm’s story begins.",
   tl2t:"Expansion", tl2x:"Growth to the capital — serving businesses, institutions and private clients.",
   tl3t:"Growth", tl3x:"Reaching north — closer to the industry, ports and people of the bay.",
-  st1l:"Offices across Israel", st2l:"Practice areas", st3l:"Generations of counsel",
+  tl4c:"Haifa & Jericho", tl4t:"Today", tl4x:"Our bases today — Derech Bar Yehuda 53 in Nesher (Haifa), and our office in Al Dyuk, Ein al-Sultan, Jericho.",
+  st1l:"Offices — Haifa & Jericho", st2l:"Practice areas", st3l:"Generations of counsel",
   k_pr:"Practice Areas", t_pr1:"Focused where", t_pr2:"it matters most.",
   pr1n:"Construction", pr1d:"Contracts, tenders, planning and zoning, defects and liens — representing developers, contractors and property owners from groundbreaking to handover.",
   pr2n:"Business & Corporate", pr2d:"Company formation, shareholder and commercial agreements, transactions and ongoing counsel — for companies at every stage of their growth.",
@@ -894,16 +946,18 @@ en:{ _title:"Kasab Law — Advocates | Nazareth · Jerusalem · Haifa",
   k_ct:"Contact", c_big1:"Every case begins", c_big2:"with a <em>conversation</em>.",
   f_name:"Full name", f_email:"Email", f_phone:"Phone (optional)", f_msg:"How can we help?", f_send:"Send message",
   f_note:"This opens your email app — nothing is sent anywhere else.",
-  f_tag:"A second-generation law firm — from Nazareth to Jerusalem and Haifa.",
+  f_tag:"A second-generation law firm — born in Nazareth, based today in Haifa and Jericho.",
   f_trib:"Founded in Nazareth by the late Adv. Khaled Kasab.",
   f_nav:"Navigate", f_contact:"Contact", f_rights:"Kasab Law — Advocates. All rights reserved.",
   top:"Back to top", toast:"Opening your email app…"
 },
-he:{ _title:"קסאב עורכי דין | נצרת · ירושלים · חיפה",
+he:{ _title:"קסאב עורכי דין | חיפה · יריחו",
   brand_sub:"עורכי דין",
-  nav_home:"בית", nav_leg:"אודות", nav_pr:"תחומי עיסוק", nav_team:"הצוות", nav_con:"צרו קשר", nav_policy:"מדיניות מקום העבודה", nav_cta:"דברו איתנו",
-  off_naz:"נצרת", off_jer:"ירושלים", off_hai:"חיפה",
-  hero_eyebrow:"עורכי דין — נצרת · ירושלים · חיפה",
+  nav_home:"בית", nav_leg:"אודות", nav_pr:"תחומי עיסוק", nav_team:"הצוות", nav_con:"צרו קשר", nav_policy:"מדיניות המשרד", nav_loc:"סניפים", nav_cta:"דברו איתנו",
+  off_naz:"נצרת", off_jer:"ירושלים", off_hai:"חיפה", off_jrc:"יריחו",
+  loc_hai_line:"חיפה — דרך בר יהודה 53, נשר", loc_jrc_line:"יריחו — אל-דיוק, עין א-סולטאן", loc_link:"סניפים, שעות ומפות",
+  svc1:"בנייה", svc2:"עסקים וחברות", svc3:"ארגוני", svc4:"הגירה והיתרי עבודה", svc5:"קניין רוחני", svc_all:"לכל תחומי העיסוק", svc_more:"למידע נוסף",
+  hero_eyebrow:"עורכי דין — חיפה · יריחו",
   h1a:"פתרונות חכמים <em>ומודרניים</em>", h1b:"וייעוץ משפטי מקצועי.",
   hero_sub:"משרד קסאב משלב חשיבה משפטית מודרנית עם ליווי אישי וזמין — לעסקים וליחידים בתחומי הבנייה, החברות, ההגירה והקניין הרוחני.",
   cta1:"לתיאום שיחה", cta2:"לתחומי העיסוק", scroll:"גללו",
@@ -915,7 +969,8 @@ he:{ _title:"קסאב עורכי דין | נצרת · ירושלים · חיפה
   tl1t:"ההתחלה", tl1x:"המשרד הראשון — כאן החל עו״ד ח'אלד קסאב את דרכו, וכאן מתחיל סיפורו של המשרד.",
   tl2t:"התרחבות", tl2x:"צמיחה אל הבירה — בשירות עסקים, מוסדות ולקוחות פרטיים.",
   tl3t:"צמיחה", tl3x:"התרחבות צפונה — קרוב לתעשייה, לנמלים ולאנשי המפרץ.",
-  st1l:"משרדים ברחבי הארץ", st2l:"תחומי עיסוק", st3l:"דורות של עריכת דין",
+  tl4c:"חיפה ויריחו", tl4t:"היום", tl4x:"הבסיסים שלנו כיום — דרך בר יהודה 53 בנשר (חיפה), ומשרדנו באל-דיוק, עין א-סולטאן, יריחו.",
+  st1l:"סניפים — חיפה ויריחו", st2l:"תחומי עיסוק", st3l:"דורות של עריכת דין",
   k_pr:"תחומי עיסוק", t_pr1:"מתמקדים", t_pr2:"במה שחשוב באמת.",
   pr1n:"בנייה", pr1d:"חוזים, מכרזים, תכנון ובנייה, ליקויים ושעבודים — ייצוג יזמים, קבלנים ובעלי נכסים מהתנעת הפרויקט ועד המסירה.",
   pr2n:"עסקים וחברות", pr2d:"הקמת חברות, הסכמי בעלי מניות והסכמים מסחריים, עסקאות וליווי משפטי שוטף — לחברות בכל שלב בצמיחתן.",
@@ -933,16 +988,18 @@ he:{ _title:"קסאב עורכי דין | נצרת · ירושלים · חיפה
   k_ct:"צרו קשר", c_big1:"כל תיק מתחיל", c_big2:"ב<em>שיחה</em>.",
   f_name:"שם מלא", f_email:"דוא״ל", f_phone:"טלפון (רשות)", f_msg:"איך נוכל לעזור?", f_send:"שלחו הודעה",
   f_note:"הפעולה פותחת את תוכנת הדואר שלכם — שום מידע לא נשלח לשום מקום אחר.",
-  f_tag:"משרד עורכי דין דור שני — מנצרת לירושלים ולחיפה.",
+  f_tag:"משרד עורכי דין דור שני — נולד בנצרת, פועל כיום מחיפה ומיריחו.",
   f_trib:"נוסד בנצרת על ידי עו״ד ח'אלד קסאב ז״ל.",
   f_nav:"ניווט", f_contact:"יצירת קשר", f_rights:"קסאב עורכי דין. כל הזכויות שמורות.",
   top:"חזרה למעלה", toast:"פותח את תוכנת הדואר…"
 },
-ar:{ _title:"كساب للمحاماة | الناصرة · القدس · حيفا",
+ar:{ _title:"كساب للمحاماة | حيفا · أريحا",
   brand_sub:"محامون",
-  nav_home:"الرئيسية", nav_leg:"من نحن", nav_pr:"مجالات العمل", nav_team:"الفريق", nav_con:"اتصلوا بنا", nav_policy:"سياسة مكان العمل", nav_cta:"تحدثوا معنا",
-  off_naz:"الناصرة", off_jer:"القدس", off_hai:"حيفا",
-  hero_eyebrow:"محامون — الناصرة · القدس · حيفا",
+  nav_home:"الرئيسية", nav_leg:"من نحن", nav_pr:"مجالات العمل", nav_team:"الفريق", nav_con:"اتصلوا بنا", nav_policy:"سياسة المكتب", nav_loc:"فروعنا", nav_cta:"تحدثوا معنا",
+  off_naz:"الناصرة", off_jer:"القدس", off_hai:"حيفا", off_jrc:"أريحا",
+  loc_hai_line:"حيفا — شارع بار يهودا 53، نيشر", loc_jrc_line:"أريحا — الديوك، عين السلطان", loc_link:"الفروع، الدوام والخرائط",
+  svc1:"البناء", svc2:"الشركات والأعمال", svc3:"الشؤون التنظيمية", svc4:"الهجرة وتصاريح العمل", svc5:"الملكية الفكرية", svc_all:"جميع مجالات العمل", svc_more:"اقرأوا المزيد",
+  hero_eyebrow:"محامون — حيفا · أريحا",
   h1a:"حلولٌ ذكية <em>وعصرية</em>", h1b:"واستشارةٌ قانونية موثوقة.",
   hero_sub:"يجمع مكتب كساب بين فكرٍ قانوني حديث ومرافقةٍ شخصية — للشركات والأفراد في مجالات البناء والشركات والهجرة والملكية الفكرية.",
   cta1:"احجزوا استشارة", cta2:"مجالات عملنا", scroll:"مرّروا",
@@ -954,7 +1011,8 @@ ar:{ _title:"كساب للمحاماة | الناصرة · القدس · حيف�
   tl1t:"البداية", tl1x:"المكتب الأول — هنا بدأ المحامي خالد كساب مسيرته، وهنا تبدأ قصة المكتب.",
   tl2t:"التوسّع", tl2x:"التوسّع نحو العاصمة — في خدمة الشركات والمؤسسات والأفراد.",
   tl3t:"النموّ", tl3x:"الامتداد شمالاً — قرب الصناعة والموانئ وأهل الخليج.",
-  st1l:"مكاتب في أنحاء البلاد", st2l:"مجالات عمل", st3l:"جيلان من المحاماة",
+  tl4c:"حيفا وأريحا", tl4t:"اليوم", tl4x:"مقرّانا اليوم — شارع بار يهودا 53 في نيشر (حيفا)، ومكتبنا في الديوك، عين السلطان، أريحا.",
+  st1l:"مكاتبنا — حيفا وأريحا", st2l:"مجالات عمل", st3l:"جيلان من المحاماة",
   k_pr:"مجالات العمل", t_pr1:"نركّز جهدنا", t_pr2:"حيث يهمّ الأمر.",
   pr1n:"البناء", pr1d:"العقود والمناقصات والتنظيم والبناء وعيوب البناء — تمثيل المطوّرين والمقاولين والمالكين من بداية المشروع حتى التسليم.",
   pr2n:"الشركات والأعمال", pr2d:"تأسيس الشركات، اتفاقيات الشركاء والاتفاقيات التجارية، الصفقات والمرافقة القانونية المستمرة — للشركات في كل مراحل نموّها.",
@@ -972,7 +1030,7 @@ ar:{ _title:"كساب للمحاماة | الناصرة · القدس · حيف�
   k_ct:"اتصلوا بنا", c_big1:"كل قضية تبدأ", c_big2:"بـ<em>حديث</em>.",
   f_name:"الاسم الكامل", f_email:"البريد الإلكتروني", f_phone:"الهاتف (اختياري)", f_msg:"كيف يمكننا المساعدة؟", f_send:"أرسلوا الرسالة",
   f_note:"سيفتح هذا تطبيق البريد لديكم — لا تُرسل البيانات إلى أي مكان آخر.",
-  f_tag:"مكتب محاماة من الجيل الثاني — من الناصرة إلى القدس وحيفا.",
+  f_tag:"مكتب محاماة من الجيل الثاني — وُلد في الناصرة، ومقرّاه اليوم في حيفا وأريحا.",
   f_trib:"تأسّس في الناصرة على يد المرحوم المحامي خالد كساب.",
   f_nav:"التنقّل", f_contact:"التواصل", f_rights:"كساب للمحاماة. جميع الحقوق محفوظة.",
   top:"العودة للأعلى", toast:"جارٍ فتح تطبيق البريد…"
@@ -1143,8 +1201,8 @@ burger.addEventListener("click", () => {
   $("#menu").setAttribute("aria-hidden", String(!open));
   if (open){
     if (lenis) lenis.stop();
-    if (hasGsap && !reduced) gsap.fromTo(".ml", { y:44, opacity:0 }, { y:0, opacity:1, duration:0.8, ease:"power4.out", stagger:0.07, delay:0.12 });
-    else $$(".ml").forEach(m => { m.style.transform = "none"; m.style.opacity = "1"; });
+    if (hasGsap && !reduced) gsap.fromTo(".ml, .ml-sub", { y:44, opacity:0 }, { y:0, opacity:1, duration:0.8, ease:"power4.out", stagger:0.06, delay:0.12 });
+    else $$(".ml, .ml-sub").forEach(m => { m.style.transform = "none"; m.style.opacity = "1"; });
   }
 });
 document.addEventListener("keydown", e => { if (e.key === "Escape") closeMenu(); });
