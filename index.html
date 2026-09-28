@@ -438,6 +438,12 @@ html.js .f-giant span{ transform:translateY(55%); opacity:0; }
   html.js .rev, html.js .hero-fade, html.js .hero-t .hli, html.js .s-title .hli, html.js .f-giant span{ opacity:1; transform:none; }
   .lead .w{ opacity:1 !important; }
 }
+
+@media(max-width:1600px){.nav-links,.nav .nav-cta{display:none;}.burger{display:block;}}
+.menu{overflow-y:auto;justify-content:flex-start;padding-top:90px;}
+.menu-links,.menu-foot{flex-shrink:0;}
+
+@media(max-width:480px){.nav-in{gap:8px;padding-inline:16px;}.nav .brand{gap:8px;}.nav .brand-ic{width:32px;height:32px;}.nav .brand-name{font-size:14px;letter-spacing:.16em;}.nav .brand-sub{display:none;}.nav .lang-b{padding:5px 8px;}.nav .burger{flex:none;width:32px;}}
 </style>
 </head>
 <body>
@@ -506,6 +512,7 @@ html.js .f-giant span{ transform:translateY(55%); opacity:0; }
       <a class="nl" href="#team" data-i="nav_team" data-cur>Team</a>
       <a class="nl" href="#legacy" data-i="nav_leg" data-cur>About</a>
       <a class="nl" href="workplace-policy.html" data-i="nav_policy" data-cur>Workplace Policy</a>
+      <a class="nl" href="community.html" data-i="nav_community" data-cur>Community</a>
       <a class="nl" href="locations.html" data-i="nav_loc" data-cur>Locations</a>
       <a class="nl" href="#contact" data-i="nav_con" data-cur>Contact</a>
     </nav>
@@ -534,8 +541,9 @@ html.js .f-giant span{ transform:translateY(55%); opacity:0; }
     <a class="ml" href="#team"><small class="num">03</small><span data-i="nav_team">Team</span></a>
     <a class="ml" href="#legacy"><small class="num">04</small><span data-i="nav_leg">About</span></a>
     <a class="ml" href="workplace-policy.html"><small class="num">05</small><span data-i="nav_policy">Workplace Policy</span></a>
-    <a class="ml" href="locations.html"><small class="num">06</small><span data-i="nav_loc">Locations</span></a>
-    <a class="ml" href="#contact"><small class="num">07</small><span data-i="nav_con">Contact</span></a>
+    <a class="ml" href="community.html"><small class="num">06</small><span data-i="nav_community">Community</span></a>
+    <a class="ml" href="locations.html"><small class="num">07</small><span data-i="nav_loc">Locations</span></a>
+    <a class="ml" href="#contact"><small class="num">08</small><span data-i="nav_con">Contact</span></a>
   </nav>
   <div class="menu-foot">
     <span><span data-i="off_hai">Haifa</span> · <span data-i="off_jrc">Jericho</span></span>
@@ -854,6 +862,7 @@ html.js .f-giant span{ transform:translateY(55%); opacity:0; }
           <li><a href="#team" data-i="nav_team" data-cur>Team</a></li>
           <li><a href="#legacy" data-i="nav_leg" data-cur>About</a></li>
           <li><a href="workplace-policy.html" data-i="nav_policy" data-cur>Workplace Policy</a></li>
+          <li><a href="community.html" data-i="nav_community" data-cur>Community</a></li>
           <li><a href="locations.html" data-i="nav_loc" data-cur>Locations</a></li>
           <li><a href="#contact" data-i="nav_con" data-cur>Contact</a></li>
         </ul>
@@ -911,7 +920,7 @@ if (!hasGsap || reduced) showEverything();
 const I18N = {
 en:{ _title:"Kasab Law — Advocates | Haifa · Jericho",
   brand_sub:"Advocates & Legal Counsel",
-  nav_home:"Home", nav_leg:"About", nav_pr:"Practice", nav_team:"Team", nav_con:"Contact", nav_policy:"Workplace Policy", nav_loc:"Locations", nav_cta:"Let’s talk",
+  nav_home:"Home", nav_leg:"About", nav_pr:"Practice", nav_team:"Team", nav_con:"Contact", nav_community:"Community", nav_policy:"Workplace Policy", nav_loc:"Locations", nav_cta:"Let’s talk",
   off_naz:"Nazareth", off_jer:"Jerusalem", off_hai:"Haifa", off_jrc:"Jericho",
   loc_hai_line:"Haifa — Derech Bar Yehuda 53, Nesher", loc_jrc_line:"Jericho — Al Dyuk, Ein al-Sultan", loc_link:"Offices, hours & maps",
   svc1:"Construction", svc2:"Business & Corporate", svc3:"Organisational", svc4:"Immigration & Work Permits", svc5:"Intellectual Property", svc_all:"All practice areas", svc_more:"Learn more",
@@ -953,7 +962,7 @@ en:{ _title:"Kasab Law — Advocates | Haifa · Jericho",
 },
 he:{ _title:"קסאב עורכי דין | חיפה · יריחו",
   brand_sub:"עורכי דין",
-  nav_home:"בית", nav_leg:"אודות", nav_pr:"תחומי עיסוק", nav_team:"הצוות", nav_con:"צרו קשר", nav_policy:"מדיניות המשרד", nav_loc:"סניפים", nav_cta:"דברו איתנו",
+  nav_home:"בית", nav_leg:"אודות", nav_pr:"תחומי עיסוק", nav_team:"הצוות", nav_con:"צרו קשר", nav_community:"קהילה", nav_policy:"מדיניות המשרד", nav_loc:"סניפים", nav_cta:"דברו איתנו",
   off_naz:"נצרת", off_jer:"ירושלים", off_hai:"חיפה", off_jrc:"יריחו",
   loc_hai_line:"חיפה — דרך בר יהודה 53, נשר", loc_jrc_line:"יריחו — אל-דיוק, עין א-סולטאן", loc_link:"סניפים, שעות ומפות",
   svc1:"בנייה", svc2:"עסקים וחברות", svc3:"ארגוני", svc4:"הגירה והיתרי עבודה", svc5:"קניין רוחני", svc_all:"לכל תחומי העיסוק", svc_more:"למידע נוסף",
@@ -995,7 +1004,7 @@ he:{ _title:"קסאב עורכי דין | חיפה · יריחו",
 },
 ar:{ _title:"كساب للمحاماة | حيفا · أريحا",
   brand_sub:"محامون",
-  nav_home:"الرئيسية", nav_leg:"من نحن", nav_pr:"مجالات العمل", nav_team:"الفريق", nav_con:"اتصلوا بنا", nav_policy:"سياسة المكتب", nav_loc:"فروعنا", nav_cta:"تحدثوا معنا",
+  nav_home:"الرئيسية", nav_leg:"من نحن", nav_pr:"مجالات العمل", nav_team:"الفريق", nav_con:"اتصلوا بنا", nav_community:"المجتمع", nav_policy:"سياسة المكتب", nav_loc:"فروعنا", nav_cta:"تحدثوا معنا",
   off_naz:"الناصرة", off_jer:"القدس", off_hai:"حيفا", off_jrc:"أريحا",
   loc_hai_line:"حيفا — شارع بار يهودا 53، نيشر", loc_jrc_line:"أريحا — الديوك، عين السلطان", loc_link:"الفروع، الدوام والخرائط",
   svc1:"البناء", svc2:"الشركات والأعمال", svc3:"الشؤون التنظيمية", svc4:"الهجرة وتصاريح العمل", svc5:"الملكية الفكرية", svc_all:"جميع مجالات العمل", svc_more:"اقرأوا المزيد",
