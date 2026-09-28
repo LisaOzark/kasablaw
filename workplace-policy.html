@@ -186,6 +186,8 @@ html.js .rev{ opacity:0; transform:translateY(30px); }
 
 @media(max-width:480px){.nav-in{gap:8px;padding-inline:16px;}.nav .brand{gap:8px;}.nav .brand-ic{width:32px;height:32px;}.nav .brand-name{font-size:14px;letter-spacing:.16em;}.nav .brand-sub{display:none;}.nav .lang-b{padding:5px 8px;}.nav .burger{flex:none;width:32px;}}
 </style>
+<link rel="stylesheet" href="navigation.css">
+<script src="navigation.js" defer></script>
 </head>
 <body>
 <div class="cur" aria-hidden="true"></div>
@@ -206,30 +208,13 @@ html.js .rev{ opacity:0; transform:translateY(30px); }
       <span class="brand-tx"><span class="brand-name">KASAB</span><br><span class="brand-sub" data-i="brand_sub">Advocates &amp; Legal Counsel</span></span>
     </a>
     <nav class="nav-links" aria-label="Primary">
-      <a class="nl" href="index.html" data-i="nav_home" data-cur>Home</a>
-      <div class="nl-drop">
-        <a class="nl" href="index.html#practice" data-cur aria-haspopup="true"><span data-i="nav_pr">Practice</span><span class="dd-car" aria-hidden="true">▾</span></a>
-        <div class="drop"><div class="drop-in">
-          <a href="service-construction.html" data-cur><span class="d-n num">01</span><span data-i="svc1">Construction</span><span class="d-ar" aria-hidden="true">→</span></a>
-          <a href="service-corporate.html" data-cur><span class="d-n num">02</span><span data-i="svc2">Business &amp; Corporate</span><span class="d-ar" aria-hidden="true">→</span></a>
-          <a href="service-organisational.html" data-cur><span class="d-n num">03</span><span data-i="svc3">Organisational</span><span class="d-ar" aria-hidden="true">→</span></a>
-          <a href="service-immigration.html" data-cur><span class="d-n num">04</span><span data-i="svc4">Immigration &amp; Work Permits</span><span class="d-ar" aria-hidden="true">→</span></a>
-          <a href="service-ip.html" data-cur><span class="d-n num">05</span><span data-i="svc5">Intellectual Property</span><span class="d-ar" aria-hidden="true">→</span></a>
-          <a class="d-all" href="index.html#practice" data-cur><span data-i="svc_all">All practice areas</span></a>
-        </div></div>
-      </div>
-      <a class="nl" href="index.html#team" data-i="nav_team" data-cur>Team</a>
-      <a class="nl" href="index.html#legacy" data-i="nav_leg" data-cur>About</a>
-      <a class="nl on" href="workplace-policy.html" data-i="nav_policy" data-cur>Workplace Policy</a>
-      <a class="nl" href="community.html" data-i="nav_community" data-cur>Community</a>
-      <a class="nl" href="locations.html" data-i="nav_loc" data-cur>Locations</a>
-      <a class="nl" href="index.html#contact" data-i="nav_con" data-cur>Contact</a>
+      <a class="nl" href="index.html" data-i="nav_home">Home</a>
+      <a class="nl" href="index.html#practice" data-i="nav_pr">Practice</a>
+      <a class="nl" href="community.html" data-i="nav_community">Community</a>
+      <a class="nl" href="locations.html" data-i="nav_loc">Locations</a>
+      <details class="about-menu"><summary class="nl on"><span data-i="nav_leg">About</span><span class="nav-chevron" aria-hidden="true"></span></summary><div class="about-options"><a href="index.html#legacy" data-i="nav_leg">About</a><a href="index.html#team" data-i="nav_team">Team</a><a href="index.html#contact" data-i="nav_con">Contact</a><a href="workplace-policy.html" data-i="nav_policy">Workplace Policy</a></div></details>
     </nav>
-    <div class="lang" role="group" aria-label="Language">
-      <button class="lang-b on" data-lang="en">EN</button>
-      <button class="lang-b" data-lang="he">עב</button>
-      <button class="lang-b" data-lang="ar">ع</button>
-    </div>
+    <div class="language-picker"><select id="language-select" aria-label="Language"><option value="en" lang="en">EN</option><option value="he" lang="he">עברית</option><option value="ar" lang="ar">العربية</option></select><span class="nav-chevron" aria-hidden="true"></span></div>
     <a href="index.html#contact" class="btn btn-o nav-cta mag" style="padding:11px 24px" data-i="nav_cta" data-cur>Let&rsquo;s talk</a>
     <button class="burger" id="burger" aria-label="Menu" aria-expanded="false"><span></span><span></span><span></span></button>
   </div>
@@ -239,19 +224,9 @@ html.js .rev{ opacity:0; transform:translateY(30px); }
   <nav class="menu-links" aria-label="Mobile">
     <a class="ml" href="index.html"><small class="num">01</small><span data-i="nav_home">Home</span></a>
     <a class="ml" href="index.html#practice"><small class="num">02</small><span data-i="nav_pr">Practice</span></a>
-    <div class="ml-sub">
-      <a href="service-construction.html" data-i="svc1">Construction</a>
-      <a href="service-corporate.html" data-i="svc2">Business &amp; Corporate</a>
-      <a href="service-organisational.html" data-i="svc3">Organisational</a>
-      <a href="service-immigration.html" data-i="svc4">Immigration &amp; Work Permits</a>
-      <a href="service-ip.html" data-i="svc5">Intellectual Property</a>
-    </div>
-    <a class="ml" href="index.html#team"><small class="num">03</small><span data-i="nav_team">Team</span></a>
-    <a class="ml" href="index.html#legacy"><small class="num">04</small><span data-i="nav_leg">About</span></a>
-    <a class="ml" href="workplace-policy.html"><small class="num">05</small><span data-i="nav_policy">Workplace Policy</span></a>
-    <a class="ml" href="community.html"><small class="num">06</small><span data-i="nav_community">Community</span></a>
-    <a class="ml" href="locations.html"><small class="num">07</small><span data-i="nav_loc">Locations</span></a>
-    <a class="ml" href="index.html#contact"><small class="num">08</small><span data-i="nav_con">Contact</span></a>
+    <a class="ml" href="community.html"><small class="num">03</small><span data-i="nav_community">Community</span></a>
+    <a class="ml" href="locations.html"><small class="num">04</small><span data-i="nav_loc">Locations</span></a>
+    <details class="about-menu mobile-about"><summary class="ml"><small class="num">05</small><span data-i="nav_leg">About</span><span class="nav-chevron" aria-hidden="true"></span></summary><div class="about-options"><a href="index.html#legacy" data-i="nav_leg">About</a><a href="index.html#team" data-i="nav_team">Team</a><a href="index.html#contact" data-i="nav_con">Contact</a><a href="workplace-policy.html" data-i="nav_policy">Workplace Policy</a></div></details>
   </nav>
   <div class="menu-foot">
     <span><span data-i="off_hai">Haifa</span> · <span data-i="off_jrc">Jericho</span></span>
@@ -467,11 +442,11 @@ function setLang(l){
   document.documentElement.lang=l; document.documentElement.dir=(l==="en")?"ltr":"rtl";
   document.title=d._title;
   $$("[data-i]").forEach(el=>{ const k=el.dataset.i; if(d[k]!=null) el.textContent=d[k]; });
-  $$(".lang-b").forEach(b=>b.classList.toggle("on", b.dataset.lang===l));
+  $("#language-select").value=l;
   try{ localStorage.setItem("kasab-lang", l); }catch(e){}
   if(hasGsap) requestAnimationFrame(()=>ScrollTrigger.refresh());
 }
-$$(".lang-b").forEach(b=>b.addEventListener("click", ()=>setLang(b.dataset.lang)));
+$("#language-select").addEventListener("change", e=>setLang(e.target.value));
 setLang(lang);
 
 /* smooth scroll */
