@@ -211,7 +211,7 @@ html.js .rev{ opacity:0; transform:translateY(30px); }
       <a class="nl" href="index.html" data-i="nav_home">Home</a>
       <a class="nl" href="index.html#practice" data-i="nav_pr">Practice</a>
       <a class="nl" href="community.html" data-i="nav_community">Community</a>
-      <a class="nl" href="locations.html" data-i="nav_loc">Locations</a>
+      <a class="nl" href="locations.html" data-i="nav_loc">Location</a>
       <details class="about-menu"><summary class="nl on"><span data-i="nav_leg">About</span><span class="nav-chevron" aria-hidden="true"></span></summary><div class="about-options"><a href="index.html#legacy" data-i="nav_leg">About</a><a href="index.html#team" data-i="nav_team">Team</a><a href="index.html#contact" data-i="nav_con">Contact</a><a href="workplace-policy.html" data-i="nav_policy">Workplace Policy</a></div></details>
     </nav>
     <div class="language-picker"><select id="language-select" aria-label="Language"><option value="en" lang="en">EN</option><option value="he" lang="he">עברית</option><option value="ar" lang="ar">العربية</option></select><span class="nav-chevron" aria-hidden="true"></span></div>
@@ -225,11 +225,11 @@ html.js .rev{ opacity:0; transform:translateY(30px); }
     <a class="ml" href="index.html"><small class="num">01</small><span data-i="nav_home">Home</span></a>
     <a class="ml" href="index.html#practice"><small class="num">02</small><span data-i="nav_pr">Practice</span></a>
     <a class="ml" href="community.html"><small class="num">03</small><span data-i="nav_community">Community</span></a>
-    <a class="ml" href="locations.html"><small class="num">04</small><span data-i="nav_loc">Locations</span></a>
+    <a class="ml" href="locations.html"><small class="num">04</small><span data-i="nav_loc">Location</span></a>
     <details class="about-menu mobile-about"><summary class="ml"><small class="num">05</small><span data-i="nav_leg">About</span><span class="nav-chevron" aria-hidden="true"></span></summary><div class="about-options"><a href="index.html#legacy" data-i="nav_leg">About</a><a href="index.html#team" data-i="nav_team">Team</a><a href="index.html#contact" data-i="nav_con">Contact</a><a href="workplace-policy.html" data-i="nav_policy">Workplace Policy</a></div></details>
   </nav>
   <div class="menu-foot">
-    <span><span data-i="off_hai">Haifa</span> · <span data-i="off_jrc">Jericho</span></span>
+    <span data-i="off_city">Jerusalem</span>
     <a href="mailto:ADKHKM@GMAIL.COM" class="num">ADKHKM@GMAIL.COM</a>
     <a href="tel:+972523223876" class="num" dir="ltr">052-3223876</a>
   </div>
@@ -313,7 +313,7 @@ html.js .rev{ opacity:0; transform:translateY(30px); }
   <div class="wrap">
     <div class="f-cols">
       <div>
-        <p class="f-tag" data-i="f_tag">A second-generation law firm — from Nazareth to Jerusalem and Haifa.</p>
+        <p class="f-tag" data-i="f_tag">A second-generation law firm — born in Nazareth, based today in Jerusalem.</p>
         <p class="f-trib" data-i="f_trib">Founded in Nazareth by the late Adv. Khaled Kasab.</p>
       </div>
       <div>
@@ -324,7 +324,7 @@ html.js .rev{ opacity:0; transform:translateY(30px); }
           <li><a href="index.html#legacy" data-i="nav_leg" data-cur>About</a></li>
           <li><a href="workplace-policy.html" data-i="nav_policy" data-cur>Workplace Policy</a></li>
           <li><a href="community.html" data-i="nav_community" data-cur>Community</a></li>
-          <li><a href="locations.html" data-i="nav_loc" data-cur>Locations</a></li>
+          <li><a href="locations.html" data-i="nav_loc" data-cur>Location</a></li>
           <li><a href="index.html#contact" data-i="nav_con" data-cur>Contact</a></li>
         </ul>
       </div>
@@ -333,9 +333,7 @@ html.js .rev{ opacity:0; transform:translateY(30px); }
         <ul class="f-list">
           <li><a href="mailto:ADKHKM@GMAIL.COM" class="num" data-cur>ADKHKM@GMAIL.COM</a></li>
           <li><a href="tel:+972523223876" class="num" dir="ltr" data-cur>052-3223876</a></li>
-          <li><span style="color:var(--muted);font-size:14px"><span data-i="loc_hai_line">Haifa — Derech Bar Yehuda 53, Nesher</span></span></li>
-          <li><span style="color:var(--muted);font-size:14px"><span data-i="loc_jrc_line">Jericho — Al Dyuk, Ein al-Sultan</span></span></li>
-        </ul>
+          <li><span style="color:var(--muted);font-size:14px"><span data-i="loc_city_line">Jerusalem</span></span></li>        </ul>
       </div>
     </div>
     <div class="f-bot">
@@ -364,6 +362,8 @@ if(!hasGsap||reduced){
 
 const I18N={
   "en": {
+    "loc_city_line": "Jerusalem",
+    "off_city": "Jerusalem",
     "_title": "Workplace Policy — Kasab Law",
     "brand_sub": "Advocates & Legal Counsel",
     "nav_home": "Home",
@@ -372,15 +372,11 @@ const I18N={
     "nav_leg": "About",
     "nav_community": "Community",
     "nav_policy": "Workplace Policy",
-    "nav_loc": "Locations",
+    "nav_loc": "Location",
     "nav_con": "Contact",
     "nav_cta": "Let’s talk",
     "off_naz": "Nazareth",
     "off_jer": "Jerusalem",
-    "off_hai": "Haifa",
-    "off_jrc": "Jericho",
-    "loc_hai_line": "Haifa — Derech Bar Yehuda 53, Nesher",
-    "loc_jrc_line": "Jericho — Al Dyuk, Ein al-Sultan",
     "svc1": "Construction",
     "svc2": "Corporate",
     "svc4": "Immigration",
@@ -406,7 +402,7 @@ const I18N={
     "pol_updated": "Last updated — July 2026",
     "pol_cta": "Work with us",
     "pol_cta2": "About the firm",
-    "f_tag": "A second-generation law firm — from Nazareth to Jerusalem and Haifa.",
+    "f_tag": "A second-generation law firm — born in Nazareth, based today in Jerusalem.",
     "f_trib": "Founded in Nazareth by the late Adv. Khaled Kasab.",
     "f_nav": "Navigate",
     "f_contact": "Contact",
@@ -414,6 +410,8 @@ const I18N={
     "top": "Back to top"
   },
   "he": {
+    "loc_city_line": "ירושלים",
+    "off_city": "ירושלים",
     "_title": "מדיניות מקום העבודה — קסאב עורכי דין",
     "brand_sub": "עורכי דין",
     "nav_home": "בית",
@@ -422,15 +420,11 @@ const I18N={
     "nav_leg": "אודות",
     "nav_community": "קהילה",
     "nav_policy": "מדיניות המשרד",
-    "nav_loc": "סניפים",
+    "nav_loc": "מיקום",
     "nav_con": "צרו קשר",
     "nav_cta": "דברו איתנו",
     "off_naz": "נצרת",
     "off_jer": "ירושלים",
-    "off_hai": "חיפה",
-    "off_jrc": "יריחו",
-    "loc_hai_line": "חיפה — דרך בר יהודה 53, נשר",
-    "loc_jrc_line": "יריחו — אל-דיוק, עין א-סולטאן",
     "svc1": "בנייה",
     "svc2": "חברות",
     "svc4": "הגירה",
@@ -456,7 +450,7 @@ const I18N={
     "pol_updated": "עודכן לאחרונה — יולי 2026",
     "pol_cta": "לעבוד איתנו",
     "pol_cta2": "אודות המשרד",
-    "f_tag": "משרד עורכי דין דור שני — נולד בנצרת, פועל כיום מחיפה ומיריחו.",
+    "f_tag": "משרד עורכי דין דור שני — נולד בנצרת, פועל כיום מירושלים.",
     "f_trib": "נוסד בנצרת על ידי עו״ד ח'אלד קסאב ז״ל.",
     "f_nav": "ניווט",
     "f_contact": "יצירת קשר",
@@ -464,6 +458,8 @@ const I18N={
     "top": "חזרה למעלה"
   },
   "ar": {
+    "loc_city_line": "القدس",
+    "off_city": "القدس",
     "_title": "سياسة مكان العمل — كساب للمحاماة",
     "brand_sub": "محامون",
     "nav_home": "الرئيسية",
@@ -472,15 +468,11 @@ const I18N={
     "nav_leg": "من نحن",
     "nav_community": "المجتمع",
     "nav_policy": "سياسة المكتب",
-    "nav_loc": "فروعنا",
+    "nav_loc": "موقعنا",
     "nav_con": "اتصلوا بنا",
     "nav_cta": "تحدثوا معنا",
     "off_naz": "الناصرة",
     "off_jer": "القدس",
-    "off_hai": "حيفا",
-    "off_jrc": "أريحا",
-    "loc_hai_line": "حيفا — شارع بار يهودا 53، نيشر",
-    "loc_jrc_line": "أريحا — الديوك، عين السلطان",
     "svc1": "البناء",
     "svc2": "الشركات",
     "svc4": "الهجرة",
@@ -506,7 +498,7 @@ const I18N={
     "pol_updated": "آخر تحديث — تموز 2026",
     "pol_cta": "اعملوا معنا",
     "pol_cta2": "عن المكتب",
-    "f_tag": "مكتب محاماة من الجيل الثاني — وُلد في الناصرة، ومقرّاه اليوم في حيفا وأريحا.",
+    "f_tag": "مكتب محاماة من الجيل الثاني — وُلد في الناصرة، ومقرّه اليوم في القدس.",
     "f_trib": "تأسّس في الناصرة على يد المرحوم المحامي خالد كساب.",
     "f_nav": "التنقّل",
     "f_contact": "التواصل",
@@ -595,3 +587,4 @@ $("#year").textContent=new Date().getFullYear();
 </script>
 </body>
 </html>
+
