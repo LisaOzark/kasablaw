@@ -30,3 +30,7 @@ body.menu-open .nav{z-index:1100;background:var(--bg);}
 @media(max-width:1120px){.nav .nav-links{display:none;}.nav .burger{display:block;}.nav .nav-in{gap:14px;}}
 @media(max-width:600px){.nav .nav-in{gap:10px;padding-inline:16px;}.nav .brand-tx{display:none;}.nav .brand-ic{width:34px;height:34px;}.nav .brand{gap:0;}.nav .nav-cta{font-size:10px;padding:10px 12px!important;letter-spacing:.06em;}.nav .burger{width:32px;}.language-picker select{width:80px;font-size:11px;}}
 @media(prefers-reduced-motion:reduce){.nav-chevron{transition:none;}}
+
+/* Keep the Latin welcome wordmark in reading order on RTL pages. */
+.pre-name{direction:ltr;unicode-bidi:isolate;}
+
